@@ -1,3 +1,43 @@
 body {
   background: blanchedalmond;
+  margin: 0;
 }
+
+*{
+  border: 5px slategrey;
+}
+
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a{
+  flex-grow: 1;
+  background-color: powderblue;
+  min-height: 2em;
+  width: 100%;
+}
+
+.b{
+  flex-grow: 3;
+  background-color: palevioletred;
+}
+
+.c{
+  flex-grow: 1;
+  background-color: lavender;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  }
+  .a, .b, .c{
+    margin: 1em;
+  }
